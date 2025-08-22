@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function confirmReset() {
+            return confirm("Are you sure you want to reset the form? All data will be lost.");
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <form onreset="return confirmReset()">
+            <table style="width: 500px;">
+                <caption><h3><center>STUDENT REGISTRATION FORM</center></h3></caption>
+                <tr>
+                    <td colspan="2">&nbsp;</td>
+                    <td align="right">
+                        <input type="image" src="bridge.jpg" height="100" width="80px">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Full Name</label></td>
+                    <td><b>:</b></td>
+                    <td><input type="text" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><label>Password</label></td>
+                    <td><b>:</b></td>
+                    <td><input type="password" name="pwd" required></td>
+                </tr>
+                <tr>
+                    <td><label>Email</label></td>
+                    <td><b>:</b></td>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label>Date of Birth</label></td>
+                    <td><b>:</b></td>
+                    <td><input type="date" name="dob" required></td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td><b>:</b></td>
+                    <td>
+                        <fieldset>
+                            <legend>Gender</legend>
+                            <input type="radio" name="gender" value="male">Male <br>
+                            <input type="radio" name="gender" value="female">Female <br>
+                            <input type="radio" name="gender" value="other">Other
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+</html>
