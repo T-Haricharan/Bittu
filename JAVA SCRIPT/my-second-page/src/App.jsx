@@ -4,7 +4,7 @@ function App() {
   
   return (
     
-      <div>
+      <div style={{textAlign:"center",marginTop:"30px"}}>
         <RegistrationForm/>
       </div>
       
